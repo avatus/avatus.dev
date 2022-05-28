@@ -47,9 +47,15 @@ export const Input = ({
 
             setLastCommandIndex(0);
 
-            await shell(history, command, setHistory, clearHistory, setCommand);
+            await shell(
+                history,
+                command.toLowerCase(),
+                setHistory,
+                clearHistory,
+                setCommand
+            );
 
-            containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
+            containerRef.current.scrollIntoView(false);
         }
 
         if (event.key === "ArrowUp") {
@@ -112,6 +118,8 @@ export const Input = ({
                 autoFocus
                 onKeyDown={onSubmit}
                 autoComplete="off"
+                autoCapitalize="off"
+                spellCheck="false"
             />
         </div>
     );

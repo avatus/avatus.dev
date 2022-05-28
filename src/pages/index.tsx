@@ -35,8 +35,11 @@ const IndexPage: NextPage<IndexPageProps> = ({ inputRef }) => {
 
     return (
         <>
-            <div className="h-full p-4 border-2 rounded-sm border-terminal-black">
-                <div ref={containerRef} className="">
+            <div
+                id="terminal"
+                className="h-full p-4 overflow-scroll border-2 rounded-sm border-terminal-black"
+            >
+                <div ref={containerRef}>
                     <History history={history} />
                     <Input
                         inputRef={inputRef}

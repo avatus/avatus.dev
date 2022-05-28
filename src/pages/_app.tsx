@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     key="viewport"
                 />
                 <title>avatus.dev</title>
+                <link rel="icon" href="/favicon.png" />
             </Head>
 
             <div onClick={onClickAnywhere}>

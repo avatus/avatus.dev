@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "FiraMono-Bold";
+    src: url(/assets/fonts/FiraMono-Bold.ttf);
+    display: swap;
+}
+
+@font-face {
+    font-family: "FiraMono";
+    src: url(/assets/fonts/FiraMono.ttf);
+    display: swap;
+}
+
+* {
+    font-family: "FiraMono", monospace;
+}
+
+.link__teleport {
+    @apply text-terminal-blue;
+}
+
+.link__email {
+    @apply text-terminal-green;
+}
+
+.link__email:hover {
+    @apply text-terminal-purple;
+}
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+    height: 100%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #24283b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #414868;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #414868;
+}

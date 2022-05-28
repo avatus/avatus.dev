@@ -1,6 +1,6 @@
 import * as bin from "./index";
 
-export const help = async (args: string[]): Promise<string> => {
+export const help = (args: string[]): string => {
     const commands = Object.keys(bin).sort().join("\n");
 
     return `Available commands:\n${commands}\n\n[tab]\t   trigger completion.\n[ctrl+l]   clear terminal.\n[ctrl+c]   cancel command.`;

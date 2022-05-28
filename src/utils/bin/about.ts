@@ -9,7 +9,7 @@ My current interests involve Elixir, GraphQL federation, and RTC.
 For further communication, use the address <span class="link__email">root&lt;at&gt;avatus&lt;dot&gt;dev</span>
 
 
-a͑̈́̽v̾̕͠a͌͑͛t̐̐͆u͑͋́s̽̽͘
+avatus
 シナプス
 
 --------------------------

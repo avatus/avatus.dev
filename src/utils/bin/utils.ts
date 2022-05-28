@@ -6,12 +6,6 @@ export const help = (args: string[]): string => {
     return `Available commands:\n${commands}\n\n[tab]\t   trigger completion.\n[ctrl+l]   clear terminal.\n[ctrl+c]   cancel command.`;
 };
 
-export const banner = (args?: string[]): string => {
-    return `
-Type 'help' to see list of available commands.
-    `;
-};
-
 export const resume = (args?: string[]): string => {
     const link = document.createElement("a");
     link.target = "_blank";

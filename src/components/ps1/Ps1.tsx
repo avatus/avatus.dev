@@ -8,7 +8,7 @@ export const Ps1 = () => {
             <span className="hidden font-bold md:inline-block text-terminal-purple">
                 avatus.dev
             </span>
-            <span className="">:$ ~ </span>
+            <span className="opacity-80">:$ ~ </span>
         </div>
     );
 };

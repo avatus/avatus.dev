@@ -14,10 +14,10 @@ export const Input = ({
     setHistory,
     setLastCommandIndex,
     clearHistory,
-}) => {
+}: any) => {
     const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
         const commands: [string] = history
-            .map(({ command }) => command)
+            .map(({ command }: any) => command)
             .filter((command: string) => command);
 
         if (event.key === "c" && event.ctrlKey) {

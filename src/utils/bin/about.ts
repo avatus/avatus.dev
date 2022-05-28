@@ -1,4 +1,4 @@
-const about = (args: string[]): string => {
+const about = (): string => {
     return `
 My name is Michael Myers and I'm a fullstack software engineer.
 I build distributed, web-based applications.

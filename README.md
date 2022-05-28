@@ -1,1 +1,1 @@
-synaptics.dev
+avatus.dev

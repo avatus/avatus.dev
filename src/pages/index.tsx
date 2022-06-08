@@ -1,9 +1,9 @@
-import { useRef, useEffect, useCallback, MutableRefObject } from "react";
-import type { NextPage } from "next";
-import { History } from "../components/history";
-import { useHistory } from "../hooks/history";
-import { Input } from "../components/input";
-import { about } from "../utils/bin";
+import { useRef, useEffect, useCallback, MutableRefObject } from 'react';
+import type { NextPage } from 'next';
+import { History } from '../components/history';
+import { useHistory } from '../hooks/history';
+import { Input } from '../components/input';
+import { about } from '../utils/bin';
 
 interface IndexPageProps {
     inputRef: MutableRefObject<HTMLInputElement>;
@@ -36,8 +36,8 @@ const IndexPage: NextPage<IndexPageProps> = ({ inputRef }) => {
     return (
         <>
             <div
-                id="terminal"
-                className="h-full p-4 overflow-scroll border-2 rounded-sm border-terminal-black"
+                id='terminal'
+                className='h-full p-4 overflow-scroll border-2 rounded-sm border-terminal-black'
             >
                 <div ref={containerRef}>
                     <History history={history} />

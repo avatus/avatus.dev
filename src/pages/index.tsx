@@ -2,8 +2,8 @@ import { useRef, useEffect, useCallback, MutableRefObject } from 'react';
 import type { NextPage } from 'next';
 import { History } from '../components/history';
 import { useHistory } from '../hooks/history';
-import { about } from '../utils/bin';
 import { Input } from '../components/input';
+import { about } from '../utils/bin';
 
 interface IndexPageProps {
     inputRef: MutableRefObject<HTMLInputElement>;

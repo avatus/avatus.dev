@@ -1,8 +1,8 @@
-import { useRef } from "react";
-import Head from "next/head";
-import type { AppProps } from "next/app";
+import { useRef } from 'react';
+import Head from 'next/head';
+import type { AppProps } from 'next/app';
 
-import "../styles/globals.css";
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
     const inputRef = useRef<HTMLInputElement>(null);
@@ -11,20 +11,21 @@ function MyApp({ Component, pageProps }: AppProps) {
             inputRef.current.focus();
         }
     };
+
     return (
         <>
             <Head>
                 <meta
-                    name="viewport"
-                    content="initial-scale=1.0, width=device-width"
-                    key="viewport"
+                    name='viewport'
+                    content='initial-scale=1.0, width=device-width'
+                    key='viewport'
                 />
                 <title>avatus.dev</title>
-                <link rel="icon" href="/favicon.png" />
+                <link rel='icon' href='/favicon.png' />
             </Head>
 
             <div onClick={onClickAnywhere}>
-                <main className="h-full bg-night text-terminal-white">
+                <main className='h-full bg-night text-terminal-white'>
                     <Component {...pageProps} inputRef={inputRef} />
                 </main>
             </div>

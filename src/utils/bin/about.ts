@@ -10,7 +10,6 @@ For further communication, use the address <span class="link__email">root&lt;at&
 
 
 avatus
-シナプス
 
 --------------------------
 

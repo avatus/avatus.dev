@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export interface History {
     id: number;
@@ -9,7 +9,7 @@ export interface History {
 
 export const useHistory = (defaultValue: Array<History>) => {
     const [history, setHistory] = React.useState<Array<History>>(defaultValue);
-    const [command, setCommand] = React.useState<string>("");
+    const [command, setCommand] = React.useState<string>('');
     const [lastCommandIndex, setLastCommandIndex] = React.useState<number>(0);
 
     return {
